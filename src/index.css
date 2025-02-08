@@ -7,13 +7,16 @@
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
 }
+a {
+  text-decoration: none;
+}
 
 body {
   margin: 0;
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  background-color: black;
+  background-color: #121212;
 }
 
 html {

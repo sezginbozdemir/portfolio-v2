@@ -1,10 +1,18 @@
 import "./App.css";
 import "@mantine/core/styles.css";
-import { MantineProvider } from "@mantine/core";
+import { createTheme, MantineProvider } from "@mantine/core";
 import AppRouter from "./AppRouter";
+
+const theme = createTheme({
+  fontFamily: "Fira Code",
+  headings: {
+    fontFamily: "Open Sans",
+  },
+});
+
 function App() {
   return (
-    <MantineProvider>
+    <MantineProvider theme={theme}>
       <AppRouter />
     </MantineProvider>
   );
