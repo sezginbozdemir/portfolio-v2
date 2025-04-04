@@ -1,4 +1,4 @@
-import { Box, Group, Stack, Title, Text } from "@mantine/core";
+import { Box, Group, Stack, Title } from "@mantine/core";
 import styles from "./About.module.css";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import data from "./about.json";
