@@ -1,8 +1,20 @@
+.mainGroup {
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
 .Title {
   font-weight: 600;
   color: #f5f5f5;
   line-height: 6rem;
   cursor: url("/black-cursor.png"), auto;
+  font-size: 6.5rem;
+  @media (max-width: 1024px) {
+    font-size: 4rem;
+    line-height: 2rem;
+  }
 }
 .Text {
   font-weight: 400;
@@ -10,10 +22,27 @@
 }
 .stack {
   flex: 8;
+  @media (max-width: 1024px) {
+    flex: 6;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 .contact {
   flex: 4;
   color: var(--white);
+  @media (max-width: 1024px) {
+    flex: 6;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.hidden {
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .equal {

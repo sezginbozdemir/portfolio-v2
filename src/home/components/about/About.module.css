@@ -117,3 +117,18 @@
   height: 100%;
   object-fit: cover;
 }
+.mainGroupTitle {
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+  }
+}
+.mainGroup {
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+}

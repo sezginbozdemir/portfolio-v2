@@ -3,7 +3,7 @@ import styles from "./About.module.css";
 
 const AboutTitle = () => {
   return (
-    <Group mb={100}>
+    <Group className={styles.mainGroupTitle} mb={100}>
       <Text className={styles.about}>.../About me</Text>
       <Stack gap={0} className={styles.descriptionStack}>
         <Title order={4} className={styles.description}>

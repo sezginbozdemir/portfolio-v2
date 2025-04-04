@@ -34,7 +34,7 @@ const FooterLinks = () => {
   ];
 
   return (
-    <Group justify="center" gap={100} mb={100} mt={50}>
+    <Group justify="center" mb={100} mt={50}>
       {linkData.map((link, index) => (
         <Button
           key={index}

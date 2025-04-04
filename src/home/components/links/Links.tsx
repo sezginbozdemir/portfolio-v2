@@ -6,7 +6,7 @@ import { MdAlternateEmail } from "react-icons/md";
 
 const Links = () => {
   return (
-    <Group justify="space-around" mb={100} mt={50} px={180}>
+    <Group className={styles.mainGroup} justify="space-around" mb={100} mt={50}>
       <Group>
         <Button
           component="a"

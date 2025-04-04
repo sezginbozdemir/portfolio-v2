@@ -12,14 +12,14 @@ const Footer = () => {
 
   return (
     <>
-      <Group mt={80} gap={50} w="100%">
+      <Group className={styles.mainGroup} mt={80} gap={50} w="100%">
         <Stack className={styles.stack} gap={30} mt={80}>
           <Text ta="start" size="7rem" className={styles.Title}>
             Sezgin
           </Text>
           <Group align="end" justify="space-between">
             <Title order={4} className={`${styles.Text} ${styles.equal}`}>
-              <Stack gap={0}>
+              <Stack className={styles.hidden} gap={0}>
                 <span>Full-stack</span>
                 <span>Developer</span>
               </Stack>

@@ -8,7 +8,7 @@ import sez from "../../../assets/images/sez.png";
 
 const AboutDetails = () => {
   return (
-    <Group align="start">
+    <Group className={styles.mainGroup} align="start">
       <Stack className={styles.tabStack}>
         <Stack className={styles.whiteTab}>
           <Title order={3} className={styles.firstTitle}>
