@@ -1,0 +1,40 @@
+import { FaReact, FaNodeJs, FaMailBulk } from "react-icons/fa";
+import { FaBootstrap, FaMap } from "react-icons/fa6";
+import {
+  SiExpress,
+  SiMongodb,
+  SiTailwindcss,
+  SiTypescript,
+  SiVite,
+  SiPostgresql,
+  SiFramer,
+  SiMantine,
+  SiPostcss,
+  SiMedusa,
+  SiTurborepo,
+  SiLeaflet,
+  SiSwiper,
+} from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+export const tileIcons: Record<string, React.ElementType> = {
+  React: FaReact,
+  "Node.js": FaNodeJs,
+  Express: SiExpress,
+  MongoDB: SiMongodb,
+  TailwindCSS: SiTailwindcss,
+  "Next.js": TbBrandNextjs,
+  TypeScript: SiTypescript,
+  Vite: SiVite,
+  "React Native": FaReact,
+  PostgreSQL: SiPostgresql,
+  "Framer Motion": SiFramer,
+  Mantine: SiMantine,
+  PostCSS: SiPostcss,
+  Bootstrap: FaBootstrap,
+  "Medusa Js": SiMedusa,
+  Turborepo: SiTurborepo,
+  Leaflet: SiLeaflet,
+  Nodemailer: FaMailBulk,
+  "Google Maps": FaMap,
+  Swiper: SiSwiper,
+};

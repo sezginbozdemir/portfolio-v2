@@ -1,0 +1,61 @@
+{
+  "frontend": {
+    "title": "Front-end",
+    "skills": [
+      { "name": "TypeScript", "icon": "TbBrandTypescript" },
+      { "name": "React", "icon": "TbBrandReact" },
+      { "name": "Context API", "icon": "TbApi" },
+      { "name": "Redux", "icon": "SiRedux" },
+      { "name": "Next.js", "icon": "SiNextdotjs" },
+      { "name": "Vite", "icon": "TbBrandVite" },
+      { "name": "React Testing", "icon": "SiTestinglibrary" },
+      { "name": "Jest", "icon": "SiJest" },
+      { "name": "GraphQL", "icon": "SiGraphql" },
+      { "name": "React Native", "icon": "TbBrandReactNative" },
+      { "name": "React Bootstrap", "icon": "SiReactbootstrap" },
+      { "name": "Medusa JS", "icon": "SiMedusa" },
+      { "name": "Shopify API", "icon": "FaShopify" }
+    ]
+  },
+  "styles": {
+    "title": "Styles",
+    "skills": [
+      { "name": "SCSS", "icon": "TbBrandCss3" },
+      { "name": "SASS", "icon": "FaSass" },
+      { "name": "PostCSS", "icon": "SiPostcss" },
+      { "name": "MUI", "icon": "SiMui" },
+      { "name": "Material UI", "icon": "SiMaterialdesign" },
+      { "name": "Mantine", "icon": "SiMantine" },
+      { "name": "Bootstrap", "icon": "FaBootstrap" },
+      { "name": "Tailwind CSS", "icon": "SiTailwindcss" },
+      { "name": "Framer Motion", "icon": "TbBrandFramerMotion" }
+    ]
+  },
+  "backend": {
+    "title": "Back-end",
+    "skills": [
+      { "name": "PostgreSQL", "icon": "SiPostgresql" },
+      { "name": "MySQL", "icon": "SiMysql" },
+      { "name": "MongoDB", "icon": "SiMongodb" },
+      { "name": "Redis", "icon": "SiRedis" },
+      { "name": "Node", "icon": "FaNodeJs" },
+      { "name": "JWT", "icon": "SiJsonwebtokens" },
+      { "name": "REST", "icon": "SiRest" },
+      { "name": "Express", "icon": "SiExpress" }
+    ]
+  },
+  "devops": {
+    "title": "DevOps",
+    "skills": [
+      { "name": "Nginx", "icon": "SiNginx" },
+      { "name": "Docker", "icon": "SiDocker" },
+      { "name": "CI/CD", "icon": "SiGithubactions" },
+      { "name": "Bash", "icon": "SiGnubash" },
+      { "name": "yalc", "icon": "SiNpm" },
+      { "name": "yarn", "icon": "FaYarn" },
+      { "name": "npm", "icon": "SiNpm" },
+      { "name": "TurboRepo", "icon": "SiTurborepo" }
+    ]
+  },
+  "githubUrl": "https://github.com/sezginbozdemir"
+}

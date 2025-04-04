@@ -1,0 +1,12 @@
+.projectGroup {
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+.first {
+  flex: 5;
+}
+.second {
+  flex: 7;
+  color: var(--white);
+}

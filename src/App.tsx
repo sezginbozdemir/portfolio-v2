@@ -1,5 +1,6 @@
 import "./App.css";
 import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
 import { createTheme, MantineProvider } from "@mantine/core";
 import AppRouter from "./AppRouter";
 

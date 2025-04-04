@@ -1,0 +1,61 @@
+.headerBox {
+  display: flex;
+  justify-content: end;
+}
+.header {
+  color: var(--white);
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 100%;
+  &:hover {
+    cursor: url("black-cursor.png"), auto;
+  }
+}
+.workBox {
+  border-top: 1px solid var(--dark-gray);
+  color: var(--white);
+}
+.workGroup {
+  border-bottom: 1px solid var(--dark-gray);
+  padding: 1rem 0rem;
+  &:hover {
+    background-color: var(--white);
+    cursor: url("/black-cursor.png"), auto;
+    color: var(--black);
+    .timeStack {
+      color: var(--black);
+    }
+    .time {
+      color: var(--black);
+    }
+  }
+}
+.innerGroup {
+  flex: 1;
+}
+.stack {
+  flex: 1;
+  font-size: 1.2rem;
+}
+.timeStack {
+  flex: 1;
+  gap: 0;
+  color: var(--light-gray);
+}
+.time {
+  font-weight: 400;
+  color: var(--light-gray);
+}
+.range {
+  font-weight: 400;
+}
+
+.company {
+  flex: 1;
+  font-weight: 450;
+}
+.total {
+  font-weight: 400;
+  color: var(--white);
+  font-style: italic;
+}

@@ -5,5 +5,5 @@
   padding: 0;
   align-items: baseline;
   width: 100%;
-  background-color: #121212;
+  background-color: var(--black);
 }

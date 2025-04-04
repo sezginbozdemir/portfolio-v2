@@ -1,0 +1,119 @@
+.about {
+  color: var(--white);
+  flex: 1;
+}
+
+.italic {
+  color: var(--white);
+  font-style: italic;
+}
+.description {
+  color: var(--light-gray);
+  font-weight: 400;
+}
+.descriptionStack {
+  flex: 1;
+}
+
+.tabStack {
+  flex: 1;
+  height: 100%;
+}
+.imgBox {
+  flex: 1;
+  justify-content: end;
+  display: flex;
+  height: 100%;
+}
+.whiteTab {
+  background-color: var(--white);
+  border-radius: 40px;
+  min-height: 10rem;
+  height: 100%;
+  padding: 1.5rem;
+  gap: 0.5rem;
+  overflow: hidden;
+  cursor: url("/black-cursor.png"), auto;
+}
+.smallTab {
+  background-color: transparent;
+  border-radius: 40px;
+  min-height: 10rem;
+  height: 100%;
+  padding: 1.5rem;
+  gap: 0.5rem;
+  border: 1px solid var(--dark-gray);
+  flex: 1;
+}
+.tab {
+  background-color: transparent;
+  border-radius: 40px;
+  min-height: 10rem;
+  height: 100%;
+  padding: 1.5rem;
+  gap: 0.5rem;
+  border: 1px solid var(--dark-gray);
+}
+.skillItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.firstTitle {
+  font-weight: 450;
+}
+.title {
+  font-weight: 450;
+  color: var(--light-gray);
+}
+
+.text {
+  color: var(--white);
+}
+
+.gitLink {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.gitBox {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--light-gray);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-right: -1.1rem;
+}
+.linkBox {
+  background-color: var(--white);
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--black);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: -1.1rem;
+}
+.detailText {
+  font-weight: 400;
+  color: var(--light-gray);
+}
+.imgOuter {
+  width: 400px;
+  height: 500px;
+  border-radius: 40px;
+  border: 1px solid var(--dark-gray);
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

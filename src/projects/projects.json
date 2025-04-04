@@ -1,0 +1,169 @@
+{
+  "projects": [
+    {
+      "name": "Econos",
+      "tiles": ["Next.js", "React", "Mantine", "TypeScript", "PostCSS"],
+      "descriptions": [
+        "A high-performance customer-facing web application built with Next.js and React, styled using Mantine and PostCSS for a modern and seamless user experience.",
+        "A fully responsive customer app with smooth CSS animations for an engaging user experience."
+      ],
+      "url": "https://github.com/sezginbozdemir",
+      "desktopImage": "/projects/econos/econos.png",
+      "mobileImage": "/projects/econos/econos-mobile.png",
+      "images": [
+        "/projects/econos/1.png",
+        "/projects/econos/2.png",
+        "/projects/econos/3.png",
+        "/projects/econos/4.png",
+        "/projects/econos/5.png",
+        "/projects/econos/6.png",
+        "/projects/econos/7.png"
+      ],
+      "link": ""
+    },
+    {
+      "name": "Vps",
+      "tiles": ["Vite", "React", "Mantine", "TypeScript", "PostCSS"],
+      "descriptions": [
+        "A Vite-powered React app using Mantine for UI components and styled with PostCSS and TypeScript for improved development experience.",
+        "Optimized for fast builds, it offers a modern and responsive interface with hooks from Mantine and smooth routing via React Router."
+      ],
+      "url": "https://github.com/sezginbozdemir",
+      "desktopImage": "/projects/vps/vps-desktop.png",
+      "mobileImage": "/projects/vps/vps-mobile.png",
+      "images": [
+        "/projects/vps/1.png",
+        "/projects/vps/2.png",
+        "/projects/vps/3.png"
+      ],
+      "link": ""
+    },
+    {
+      "name": "Pixado",
+      "tiles": ["Vite", "React", "TypeScript", "Bootstrap", "Framer Motion"],
+      "descriptions": [
+        "A fast and responsive Vite-powered React app using TypeScript, Bootstrap, and Framer Motion for smooth animations.",
+        "Pixado is a high-performance Vite-based React application, leveraging TypeScript for type safety, Bootstrap for styling, and Framer Motion for seamless animations. Designed for speed and responsiveness, it delivers a modern and dynamic user experience."
+      ],
+      "url": "https://github.com/sezginbozdemir",
+      "desktopImage": "/projects/pixado/pixado-desktop.png",
+      "mobileImage": "/projects/pixado/pixado-mobile.png",
+      "images": [
+        "/projects/pixado/1.png",
+        "/projects/pixado/2.png",
+        "/projects/pixado/3.png",
+        "/projects/pixado/4.png",
+        "/projects/pixado/5.png"
+      ],
+      "link": ""
+    },
+    {
+      "name": "Nova Lens",
+      "tiles": [
+        "Next.js",
+        "Medusa Js",
+        "TailwindCSS",
+        "TypeScript",
+        "Turborepo"
+      ],
+      "descriptions": [
+        "A monorepo e-commerce application built with Medusa, Next.js, and TailwindCSS, featuring a customizable dashboard, storefront, and server, along with a wishlist plugin for enhanced user experience.",
+        "Powered by Turborepo for efficient development, it includes a wishlist plugin to enhance shopping experiences and streamline customer engagement."
+      ],
+      "url": "https://github.com/sezginbozdemir",
+      "desktopImage": "/projects/nova/desktop.png",
+      "mobileImage": "/projects/nova/mobile.png",
+      "images": [
+        "/projects/nova/1.png",
+        "/projects/nova/2.png",
+        "/projects/nova/3.png",
+        "/projects/nova/4.png",
+        "/projects/nova/5.png",
+        "/projects/nova/6.png",
+        "/projects/nova/7.png",
+        "/projects/nova/8.png"
+      ],
+      "link": ""
+    },
+    {
+      "name": "Vessa Hospital",
+      "tiles": [
+        "Next.js",
+        "React",
+        "JWT Authentication",
+        "Leaflet",
+        "TailwindCSS",
+        "Nodemailer",
+        "Google Maps",
+        "Swiper"
+      ],
+
+      "descriptions": [
+        "A Next.js app with Google Maps, JWT authentication, email integration using Nodemailer, and a clean, responsive design using TailwindCSS.",
+        "Featuring Leaflet for interactive maps, React Time Picker for scheduling, and a smooth user experience enhanced by Swiper."
+      ],
+      "url": "https://github.com/sezginbozdemir",
+      "desktopImage": "/projects/vessa/desktop.png",
+      "mobileImage": "/projects/vessa/mobile.png",
+      "images": [
+        "/projects/vessa/1.png",
+        "/projects/vessa/2.png",
+        "/projects/vessa/3.png",
+        "/projects/vessa/4.png",
+        "/projects/vessa/5.png",
+        "/projects/vessa/6.png"
+      ],
+      "link": ""
+    },
+    {
+      "name": "Inventory Solutions",
+      "tiles": [
+        "Vite",
+        "React",
+        "Mantine",
+        "TailwindCSS",
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
+      "descriptions": [
+        "A full-stack application with a Vite-powered React frontend using Mantine and TailwindCSS, and an Express backend with MongoDB.",
+        "featuring a Vite-based React frontend styled with Mantine and TailwindCSS. The backend is powered by Express and MongoDB, ensuring a scalable and efficient architecture for seamless user interactions."
+      ],
+      "url": "https://github.com/sezginbozdemir",
+      "desktopImage": "/projects/stock/desktop.png",
+      "mobileImage": "/projects/stock/mobile.png",
+      "images": [
+        "/projects/stock/1.png",
+        "/projects/stock/2.png",
+        "/projects/stock/3.png",
+        "/projects/stock/4.png"
+      ],
+      "link": ""
+    },
+    {
+      "name": "Product Comparison",
+      "tiles": [
+        "React",
+        "Bootstrap",
+        "CSV Parsing",
+        "Affiliate Site",
+        "Product Comparison"
+      ],
+      "descriptions": [
+        "A React-powered affiliate site that fetches products from CSV files and provides an intuitive product comparison experience.",
+        "Product Comparison is an affiliate website built with React and Bootstrap, designed to fetch product data from CSV files using PapaParse. It enables users to compare products efficiently, offering a seamless shopping experience with interactive filtering and sorting tools."
+      ],
+      "url": "https://github.com/sezginbozdemir",
+      "desktopImage": "/projects/comparison/desktop.png",
+      "mobileImage": "/projects/comparison/mobile.png",
+      "images": [
+        "/projects/comparison/1.png",
+        "/projects/comparison/2.png",
+        "/projects/comparison/3.png",
+        "/projects/comparison/4.png"
+      ],
+      "link": ""
+    }
+  ]
+}

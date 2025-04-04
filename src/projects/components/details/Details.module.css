@@ -1,0 +1,73 @@
+.detailStack {
+  flex: 5;
+  color: var(--white);
+  align-items: start;
+  gap: 3rem;
+}
+.name {
+  font-weight: 400;
+}
+.tile {
+  border: 1px solid var(--dark-gray);
+  border-radius: 100px;
+  padding: 0.5rem 1.5rem;
+}
+.description {
+  color: var(--light-gray);
+  font-weight: 450;
+}
+.imagesButton {
+  flex: 1;
+  border: 1px solid var(--light-gray);
+  border-radius: 100px;
+  height: 50px;
+  background-color: transparent;
+  color: var(--white);
+  &:hover {
+    background-color: var(--white);
+    color: var(--dark-gray);
+  }
+}
+.buttonTitle {
+  font-weight: 400;
+  margin: 0 0.5rem;
+}
+.modalContainer {
+  padding: 0;
+  background-color: var(--black);
+}
+
+.modalContent {
+  max-height: 90vh;
+  overflow: hidden;
+}
+.modalHeader {
+  display: none;
+}
+
+.carouselRoot {
+  height: 70vh;
+}
+
+.carouselSlide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselContainer {
+  height: 100%;
+}
+.carouselControl {
+  background-color: transparent;
+  border: 0;
+  color: var(--white);
+}
+.carouselControls {
+  padding: 0 5rem;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}

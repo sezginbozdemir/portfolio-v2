@@ -1,0 +1,44 @@
+.container {
+  color: var(--white);
+  align-items: start;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+.title {
+  flex: 4;
+}
+
+.formBox {
+  flex: 8;
+  padding: 20px;
+  border: 1px solid var(--dark-gray);
+  border-radius: 20px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.inputField {
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid var(--light-gray);
+  border-radius: 100px;
+  color: var(--white);
+  &:hover {
+    background-color: var(--white);
+    color: var(--black);
+  }
+}
+
+.input {
+  border: 1px solid var(--light-gray);
+  background-color: transparent;
+  border-radius: 100px;
+  color: var(--white);
+}
