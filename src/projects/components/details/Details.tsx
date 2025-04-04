@@ -1,21 +1,13 @@
-import {
-  Box,
-  Button,
-  Group,
-  Stack,
-  Text,
-  Title,
-  Modal,
-  Image,
-} from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
-import { Carousel } from "@mantine/carousel";
+import { Box, Button, Group, Stack, Text, Title, Modal } from "@mantine/core";
 import styles from "./Details.module.css";
 import LinkButton from "../../../shared/components/linkButton/LinkButton";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { tileIcons } from "./Icons";
 import { IoImages } from "react-icons/io5";
+import { Image } from "@mantine/core";
+import { Carousel, Embla, useAnimationOffsetEffect } from "@mantine/carousel";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { useState } from "react";
 
 interface DetailsProps {
   name: string;
@@ -33,7 +25,11 @@ const Details: React.FC<DetailsProps> = ({
   images,
   index,
 }) => {
-  const [opened, { open, close }] = useDisclosure(false);
+  const TRANSITION_DURATION = 200;
+  const [opened, setOpened] = useState(false);
+  const [embla, setEmbla] = useState<Embla | null>(null);
+
+  useAnimationOffsetEffect(embla, TRANSITION_DURATION);
   return (
     <>
       <Stack
@@ -66,7 +62,10 @@ const Details: React.FC<DetailsProps> = ({
           <Box className={styles.box}>
             <LinkButton url={url} icon={TbBrandGithubFilled} />
           </Box>
-          <Button className={styles.imagesButton} onClick={open}>
+          <Button
+            className={styles.imagesButton}
+            onClick={() => setOpened(true)}
+          >
             <Title className={styles.buttonTitle} order={5}>
               +{images.length}
             </Title>
@@ -79,8 +78,10 @@ const Details: React.FC<DetailsProps> = ({
         </Group>
       </Stack>
       <Modal
+        transitionProps={{ duration: TRANSITION_DURATION }}
+        withCloseButton={false}
         opened={opened}
-        onClose={close}
+        onClose={() => setOpened(false)}
         size="2xl"
         padding={0}
         classNames={{
@@ -92,6 +93,7 @@ const Details: React.FC<DetailsProps> = ({
         centered
       >
         <Carousel
+          getEmblaApi={setEmbla}
           classNames={{
             root: styles.carouselRoot,
             slide: styles.carouselSlide,
@@ -113,7 +115,7 @@ const Details: React.FC<DetailsProps> = ({
                 height="100%"
                 width="100%"
                 fit="contain"
-                alt={`${name} project image ${index + 1}`}
+                alt="Project image"
               />
             </Carousel.Slide>
           ))}
