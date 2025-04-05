@@ -34,7 +34,7 @@ const Footer = () => {
           </Group>
         </Stack>
         <Stack className={styles.contact}>
-          <Text>.../Contact</Text>
+          <Text> .../Contact</Text>
           <Group justify="space-around">
             {links.map((link, index) => (
               <Link key={index} className={styles.Link} to={link.path}>

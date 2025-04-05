@@ -15,3 +15,31 @@
   flex: 7;
   color: var(--white);
 }
+.second span {
+  padding: 0 0.5rem;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid var(--white);
+  white-space: nowrap;
+  margin: 0 auto;
+  width: fit-content;
+  animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 250px;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--white);
+  }
+}

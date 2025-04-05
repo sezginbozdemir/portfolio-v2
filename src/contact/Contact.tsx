@@ -7,6 +7,7 @@ import {
   Button,
   Title,
 } from "@mantine/core";
+import { ScrollTop } from "../shared/hooks/ScrollTop";
 import styles from "./Contact.module.css";
 import { ChangeEvent, FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -17,6 +18,7 @@ interface FormData {
   message: string;
 }
 const Contact = () => {
+  ScrollTop();
   const [statusMessage, setStatusMessage] = useState<string>("");
   const [statusType, setStatusType] = useState<"success" | "error" | "">("");
   const [formData, setFormData] = useState<FormData>({
@@ -63,7 +65,9 @@ const Contact = () => {
   };
   return (
     <Group className={styles.container} mt={100}>
-      <Text className={styles.title}>.../Contact me</Text>
+      <Text className={styles.title}>
+        <span>.../Contact me</span>
+      </Text>
       <Box className={styles.formBox}>
         <form onSubmit={handleSubmit}>
           <TextInput

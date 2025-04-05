@@ -6,4 +6,5 @@
   align-items: baseline;
   width: 100%;
   background-color: var(--black);
+  overflow-x: hidden;
 }

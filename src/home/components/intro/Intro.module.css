@@ -13,7 +13,19 @@
     font-size: 4rem;
     line-height: 2rem;
   }
+  @media (max-width: 480px) {
+    font-size: 3rem;
+    line-height: 1.8rem;
+  }
 }
+
+.slideLeft {
+  animation: slideInLeft 1.5s ease-out forwards;
+}
+.slideRight {
+  animation: slideInRight 1.5s ease-out forwards;
+}
+
 .devGroup {
   @media (max-width: 1024px) {
     justify-content: end;
@@ -52,6 +64,8 @@
   font-style: italic;
 }
 .Text {
+  opacity: 0;
+  animation: appear 2.5s ease-out 1.5s forwards;
   font-weight: 400;
   color: var(--light-gray);
   width: 40%;
@@ -62,4 +76,35 @@
 .TextSpan {
   color: var(--white);
   font-style: italic;
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -3,12 +3,16 @@ import styles from "./Projects.module.css";
 import Details from "./components/details/Details";
 import ImageGallery from "./components/image-gallery/ImageGallery";
 import data from "./projects.json";
+import { ScrollTop } from "../shared/hooks/ScrollTop";
 const Projects = () => {
+  ScrollTop();
   return (
     <>
       <Group mt={50}>
         <Box className={styles.first}></Box>
-        <Text className={styles.second}>.../Projects</Text>
+        <Text className={styles.second}>
+          <span>.../Projects</span>
+        </Text>
       </Group>
       <Stack className={styles.projectStack} gap={150}>
         {data.projects.map((project, index) => (
