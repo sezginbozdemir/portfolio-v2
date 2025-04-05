@@ -8,6 +8,7 @@ import { Image } from "@mantine/core";
 import { Carousel, Embla, useAnimationOffsetEffect } from "@mantine/carousel";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { useState } from "react";
+import { useMediaQuery } from "@mantine/hooks";
 
 interface DetailsProps {
   name: string;
@@ -28,12 +29,15 @@ const Details: React.FC<DetailsProps> = ({
   const TRANSITION_DURATION = 200;
   const [opened, setOpened] = useState(false);
   const [embla, setEmbla] = useState<Embla | null>(null);
+  const isMobile = useMediaQuery("(max-width: 768px)");
 
   useAnimationOffsetEffect(embla, TRANSITION_DURATION);
   return (
     <>
       <Stack
-        style={index % 2 === 0 ? { order: 1 } : { order: 2 }}
+        style={{
+          order: isMobile ? "unset" : index % 2 === 0 ? 1 : 2,
+        }}
         className={styles.detailStack}
       >
         <Stack gap={30}>
