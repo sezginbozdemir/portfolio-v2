@@ -17,13 +17,13 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
   index,
   link,
 }) => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isMobile = useMediaQuery("(max-width: 1024px)");
 
   return (
     <Group
       className={styles.imgGroup}
       style={{
-        order: isMobile ? "unset" : index % 2 === 0 ? 2 : 1,
+        order: isMobile ? 1 : index % 2 === 0 ? 2 : 1,
       }}
     >
       {index % 2 === 0 && (

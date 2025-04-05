@@ -10,7 +10,7 @@ const Projects = () => {
         <Box className={styles.first}></Box>
         <Text className={styles.second}>.../Projects</Text>
       </Group>
-      <Stack gap={150}>
+      <Stack className={styles.projectStack} gap={150}>
         {data.projects.map((project, index) => (
           <Group className={styles.projectGroup} key={index} mt={50}>
             <Details

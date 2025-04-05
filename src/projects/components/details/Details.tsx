@@ -29,14 +29,14 @@ const Details: React.FC<DetailsProps> = ({
   const TRANSITION_DURATION = 200;
   const [opened, setOpened] = useState(false);
   const [embla, setEmbla] = useState<Embla | null>(null);
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isMobile = useMediaQuery("(max-width: 1024px)");
 
   useAnimationOffsetEffect(embla, TRANSITION_DURATION);
   return (
     <>
       <Stack
         style={{
-          order: isMobile ? "unset" : index % 2 === 0 ? 1 : 2,
+          order: isMobile ? 2 : index % 2 === 0 ? 1 : 2,
         }}
         className={styles.detailStack}
       >
