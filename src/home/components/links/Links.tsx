@@ -46,13 +46,25 @@ const Links = () => {
         </Title>
       </Button>
       <Group>
-        <Button className={styles.Button} variant="outline" radius="xl">
+        <Button
+          component="a"
+          href="https://www.instagram.com/sezginbozdemir/"
+          className={styles.Button}
+          variant="outline"
+          radius="xl"
+        >
           <Title order={5} className={styles.Text}>
             <FaInstagram size={18} color="var(--white)" />
             Instagram
           </Title>
         </Button>
-        <Button className={styles.Button} variant="outline" radius="xl">
+        <Button
+          component="a"
+          href="https://www.facebook.com/SezginBozdemir/"
+          className={styles.Button}
+          variant="outline"
+          radius="xl"
+        >
           <Title order={5} className={styles.Text}>
             <FaFacebookF size={18} color="var(--white)" />
             Facebook

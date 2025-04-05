@@ -24,12 +24,12 @@ const FooterLinks = () => {
     {
       name: "Instagram",
       icon: <FaInstagram size={18} color="var(--white)" />,
-      link: "#",
+      link: "https://www.instagram.com/sezginbozdemir/",
     },
     {
       name: "Facebook",
       icon: <FaFacebookF size={18} color="var(--white)" />,
-      link: "#",
+      link: "https://www.facebook.com/SezginBozdemir/",
     },
   ];
 

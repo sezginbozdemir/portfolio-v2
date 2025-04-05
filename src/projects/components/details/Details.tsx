@@ -83,7 +83,7 @@ const Details: React.FC<DetailsProps> = ({
       </Stack>
       <Modal
         transitionProps={{ duration: TRANSITION_DURATION }}
-        withCloseButton={false}
+        withCloseButton={true}
         opened={opened}
         onClose={() => setOpened(false)}
         size="2xl"
@@ -93,6 +93,7 @@ const Details: React.FC<DetailsProps> = ({
           inner: styles.modalContainer,
           content: styles.modalContent,
           header: styles.modalHeader,
+          close: styles.modalClose,
         }}
         centered
       >
@@ -105,8 +106,8 @@ const Details: React.FC<DetailsProps> = ({
             control: styles.carouselControl,
             controls: styles.carouselControls,
           }}
-          nextControlIcon={<BsChevronRight size={36} />}
-          previousControlIcon={<BsChevronLeft size={36} />}
+          nextControlIcon={<BsChevronRight size={46} />}
+          previousControlIcon={<BsChevronLeft size={46} />}
           height="100%"
           slideSize="100%"
           loop
