@@ -1,4 +1,4 @@
-import { Box, Group } from "@mantine/core";
+import { Box, Group, Image } from "@mantine/core";
 import styles from "./ImageGallery.module.css";
 import { FiLink } from "react-icons/fi";
 import LinkButton from "../../../shared/components/linkButton/LinkButton";
@@ -28,11 +28,19 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
     >
       {index % 2 === 0 && (
         <Box className={styles.mobileImgBox}>
-          <img src={mobile} alt="Fullstack dev" className={styles.mobileImg} />
+          <Image
+            src={mobile}
+            alt="Fullstack dev"
+            className={styles.mobileImg}
+          />
         </Box>
       )}
       <Box className={styles.desktopImgBox}>
-        <img src={desktop} alt="Fullstack dev" className={styles.desktopImg} />
+        <Image
+          src={desktop}
+          alt="Fullstack dev"
+          className={styles.desktopImg}
+        />
         {link && (
           <Box className={styles.floatBox}>
             <LinkButton url={link} icon={FiLink} />
@@ -42,7 +50,11 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
       </Box>
       {index % 2 !== 0 && (
         <Box className={styles.mobileImgBox}>
-          <img src={mobile} alt="Fullstack dev" className={styles.mobileImg} />
+          <Image
+            src={mobile}
+            alt="Fullstack dev"
+            className={styles.mobileImg}
+          />
         </Box>
       )}
     </Group>

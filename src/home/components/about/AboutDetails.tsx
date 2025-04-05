@@ -1,4 +1,4 @@
-import { Box, Group, Stack, Title } from "@mantine/core";
+import { Box, Group, Image, Stack, Title } from "@mantine/core";
 import styles from "./About.module.css";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import data from "./about.json";
@@ -75,7 +75,7 @@ const AboutDetails = () => {
       </Stack>
       <Box className={styles.imgBox}>
         <Box className={styles.imgOuter}>
-          <img src={sez} alt="fullstack dev" className={styles.img} />
+          <Image src={sez} alt="fullstack dev" className={styles.img} />
         </Box>
       </Box>
     </Group>
