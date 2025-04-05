@@ -55,7 +55,7 @@ const Contact = () => {
         setStatusType("success");
         setFormData({ name: "", email: "", subject: "", message: "" });
       })
-      .catch((err) => {
+      .catch((err: any) => {
         console.error("Error sending email:", err);
         setStatusMessage("Failed to send message. Please try again.");
         setStatusType("error");
