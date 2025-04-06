@@ -1,0 +1,49 @@
+{
+  "intro": {
+    "part1": "My focus is on",
+    "part2": "writing clean, maintainable,",
+    "part3": "readable code",
+    "part4": "that enhances the development experience.",
+    "part5": "I aim to create efficient, scalable solutions that not only meet the project’s needs but also ensure a smooth and enjoyable development journey."
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "breadcrumb": ".../About me",
+    "line1_start": "Hello, I'm Sezgin, a",
+    "line1_italic": "full-stack developer",
+    "line1_end": "with",
+    "line2_start": "over",
+    "line2_italic": "5 years",
+    "line2_end": "of experience based in Romania.",
+    "line3_start": "Some of my",
+    "line3_italic": "favourite technologies, topics or tools",
+    "line3_end": "that I worked with"
+  },
+
+  "site": {
+    "line1": "Styled with Mantine /",
+    "line2": "Powered by Vite /",
+    "line3": "Built with TypeScript /"
+  },
+  "projects": {
+    "breadcrumb": ".../Projects"
+  },
+  "contact": {
+    "title": ".../Contact me",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "Your email",
+    "subject": "Subject",
+    "subjectPlaceholder": "Subject",
+    "message": "Message",
+    "messagePlaceholder": "Your message",
+    "submitButton": "Submit",
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "Failed to send message. Please try again."
+  }
+}

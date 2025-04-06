@@ -5,8 +5,10 @@ import data from "./about.json";
 import { iconMap } from "./Icons";
 import LinkButton from "../../../shared/components/linkButton/LinkButton";
 import sez from "../../../assets/images/sez.png";
+import { useTranslation } from "react-i18next";
 
 const AboutDetails = () => {
+  const { t } = useTranslation();
   return (
     <Group className={styles.mainGroup} align="start">
       <Stack style={{ zIndex: "1000" }} className={styles.tabStack}>
@@ -52,11 +54,11 @@ const AboutDetails = () => {
         <Group>
           <Box className={styles.gitLink}>
             <Title order={5} className={styles.detailText}>
-              Some of my{" "}
+              {t("about.line3_start")}
               <span className={styles.italic}>
-                favourite technologies, topics or tools
+                {""} {t("about.line3_italic")}
               </span>{" "}
-              that i worked with
+              {t("about.line3_end")}
             </Title>
           </Box>
           <Stack className={styles.smallTab}>

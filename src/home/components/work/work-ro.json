@@ -1,24 +1,25 @@
 {
-  "total": "6 years 6 months",
+  "total": "6 ani 6 luni",
+  "title": "Experiență de munca",
   "experience": [
     {
       "start": "2018",
       "end": "2021",
-      "duration": "3 years 3 months",
+      "duration": "3 ani 3 luni",
       "company": "Emr Engros",
       "role": "Frontend Developer | React"
     },
     {
       "start": "2021",
       "end": "2023",
-      "duration": "2 years",
+      "duration": "2 ani",
       "company": "Freelancer | Upwork",
       "role": "Web Developer"
     },
     {
       "start": "2023",
-      "end": "Present",
-      "duration": "Ongoing",
+      "end": "Prezent",
+      "duration": "În curs",
       "company": "Pixado",
       "role": "Full Stack Developer | Node.js, React"
     }

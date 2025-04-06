@@ -13,12 +13,22 @@ import { Link } from "react-router-dom";
 import { useMediaQuery } from "@mantine/hooks";
 import { FiMenu, FiX } from "react-icons/fi";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+
+type LangCode = "en" | "ro" | "tr";
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lng: LangCode) => i18n.changeLanguage(lng);
+  const currentLang = i18n.language;
   const links = [
-    { to: "/", label: "About" },
-    { to: "/projects", label: "Projects" },
-    { to: "/contact", label: "Contact" },
+    { to: "/", label: t("nav.about") },
+    { to: "/projects", label: t("nav.projects") },
+    { to: "/contact", label: t("nav.contact") },
+  ];
+  const languages: { code: LangCode; label: string }[] = [
+    { code: "en", label: "En" },
+    { code: "ro", label: "Ro" },
   ];
 
   const mobile = useMediaQuery("(max-width: 768px)");
@@ -77,12 +87,20 @@ const Header = () => {
           )}
           {!mobile && (
             <Stack style={{ zIndex: "1000" }} gap={0}>
-              <Title className={styles.Title} order={3}>
-                En
-              </Title>
-              <Title className={styles.Title} order={3}>
-                Ro
-              </Title>
+              {languages.map((lang) => (
+                <Title
+                  key={lang.code}
+                  className={styles.Title}
+                  order={3}
+                  onClick={() => changeLanguage(lang.code)}
+                  style={{
+                    textDecoration:
+                      currentLang === lang.code ? "underline" : "none",
+                  }}
+                >
+                  {lang.label}
+                </Title>
+              ))}
             </Stack>
           )}
           {mobile && (
@@ -120,12 +138,20 @@ const Header = () => {
               </Link>
             ))}
             <Group mt={20}>
-              <Title className={styles.Title} order={3}>
-                En
-              </Title>
-              <Title className={styles.Title} order={3}>
-                Ro
-              </Title>
+              {languages.map((lang) => (
+                <Title
+                  key={lang.code}
+                  className={styles.Title}
+                  order={3}
+                  onClick={() => changeLanguage(lang.code)}
+                  style={{
+                    textDecoration:
+                      currentLang === lang.code ? "underline" : "none",
+                  }}
+                >
+                  {lang.label}
+                </Title>
+              ))}
             </Group>
           </Stack>
         )}

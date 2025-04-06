@@ -1,0 +1,49 @@
+{
+  "intro": {
+    "part1": "Mă concentrez pe",
+    "part2": "scrierea unui cod clar, ușor de întreținut,",
+    "part3": "ușor de citit",
+    "part4": "care îmbunătățește experiența de dezvoltare.",
+    "part5": "Îmi propun să creez soluții eficiente și scalabile care nu doar să răspundă nevoilor proiectului, ci și să asigure un parcurs plăcut și lin în dezvoltare."
+  },
+  "nav": {
+    "about": "Despre",
+    "projects": "Proiecte",
+    "contact": "Contact"
+  },
+
+  "about": {
+    "breadcrumb": ".../Despre mine",
+    "line1_start": "Salut, sunt Sezgin, un",
+    "line1_italic": "dezvoltator full-stack",
+    "line1_end": "cu",
+    "line2_start": "peste",
+    "line2_italic": "5 ani",
+    "line2_end": "de experiență în România.",
+    "line3_start": "Unele dintre ale mele",
+    "line3_italic": "tehnologii, subiecte sau unelte preferate",
+    "line3_end": "cu care am lucrat"
+  },
+  "site": {
+    "line1": "Stilizat cu Mantine /",
+    "line2": "Putere oferită de Vite /",
+    "line3": "Construit cu TypeScript /"
+  },
+  "projects": {
+    "breadcrumb": ".../Proiecte"
+  },
+  "contact": {
+    "title": ".../Contactează-mă",
+    "name": "Nume",
+    "namePlaceholder": "Numele tău",
+    "email": "Email",
+    "emailPlaceholder": "Adresa ta de email",
+    "subject": "Subiect",
+    "subjectPlaceholder": "Subiect",
+    "message": "Mesaj",
+    "messagePlaceholder": "Mesajul tău",
+    "submitButton": "Trimite",
+    "successMessage": "Mesaj trimis cu succes!",
+    "errorMessage": "Nu s-a putut trimite mesajul. Te rugăm să încerci din nou."
+  }
+}

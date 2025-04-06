@@ -1,0 +1,169 @@
+{
+  "projects": [
+    {
+      "name": "Econos",
+      "tiles": ["Next.js", "React", "Mantine", "TypeScript", "PostCSS"],
+      "descriptions": [
+        "O aplicație web de înaltă performanță destinată clienților, construită cu Next.js și React, stilizată folosind Mantine și PostCSS pentru o experiență modernă și fluidă a utilizatorului.",
+        "O aplicație complet responsivă pentru clienți, cu animații CSS fluide pentru o experiență captivantă a utilizatorului."
+      ],
+      "url": "https://github.com/sezginbozdemir/econos",
+      "desktopImage": "/projects/econos/econos.png",
+      "mobileImage": "/projects/econos/econos-mobile.png",
+      "images": [
+        "/projects/econos/1.png",
+        "/projects/econos/2.png",
+        "/projects/econos/3.png",
+        "/projects/econos/4.png",
+        "/projects/econos/5.png",
+        "/projects/econos/6.png",
+        "/projects/econos/7.png"
+      ],
+      "link": ""
+    },
+    {
+      "name": "Vps",
+      "tiles": ["Vite", "React", "Mantine", "TypeScript", "PostCSS"],
+      "descriptions": [
+        "O aplicație React alimentată de Vite, folosind Mantine pentru componentele UI și stilizată cu PostCSS și TypeScript pentru o experiență de dezvoltare îmbunătățită.",
+        "Optimizată pentru construiri rapide, oferă o interfață modernă și responsivă cu hooks din Mantine și rutare fluidă prin React Router."
+      ],
+      "url": "https://github.com/sezginbozdemir/vps",
+      "desktopImage": "/projects/vps/vps-desktop.png",
+      "mobileImage": "/projects/vps/vps-mobile.png",
+      "images": [
+        "/projects/vps/1.png",
+        "/projects/vps/2.png",
+        "/projects/vps/3.png"
+      ],
+      "link": ""
+    },
+    {
+      "name": "Pixado",
+      "tiles": ["Vite", "React", "TypeScript", "Bootstrap", "Framer Motion"],
+      "descriptions": [
+        "O aplicație rapidă și responsivă bazată pe Vite și React, folosind TypeScript, Bootstrap și Framer Motion pentru animații fluide.",
+        "Pixado este o aplicație Vite de înaltă performanță bazată pe React, care utilizează TypeScript pentru siguranța tipurilor, Bootstrap pentru stilizare și Framer Motion pentru animații fluide. Proiectată pentru viteză și răspuns rapid, oferă o experiență modernă și dinamică a utilizatorului."
+      ],
+      "url": "https://github.com/sezginbozdemir/pixado",
+      "desktopImage": "/projects/pixado/pixado-desktop.png",
+      "mobileImage": "/projects/pixado/pixado-mobile.png",
+      "images": [
+        "/projects/pixado/1.png",
+        "/projects/pixado/2.png",
+        "/projects/pixado/3.png",
+        "/projects/pixado/4.png",
+        "/projects/pixado/5.png"
+      ],
+      "link": ""
+    },
+    {
+      "name": "Nova Lens",
+      "tiles": [
+        "Next.js",
+        "Medusa Js",
+        "TailwindCSS",
+        "TypeScript",
+        "Turborepo"
+      ],
+      "descriptions": [
+        "O aplicație monorepo de comerț electronic construită cu Medusa, Next.js și TailwindCSS, având un dashboard personalizabil, un magazin online și un server, împreună cu un plugin de listă de dorințe pentru o experiență îmbunătățită a utilizatorului.",
+        "Alimentată de Turborepo pentru dezvoltare eficientă, include un plugin de listă de dorințe pentru a îmbunătăți experiențele de cumpărături și a eficientiza interacțiunile cu clienții."
+      ],
+      "url": "https://github.com/sezginbozdemir/nova-lens",
+      "desktopImage": "/projects/nova/desktop.png",
+      "mobileImage": "/projects/nova/mobile.png",
+      "images": [
+        "/projects/nova/1.png",
+        "/projects/nova/2.png",
+        "/projects/nova/3.png",
+        "/projects/nova/4.png",
+        "/projects/nova/5.png",
+        "/projects/nova/6.png",
+        "/projects/nova/7.png",
+        "/projects/nova/8.png"
+      ],
+      "link": ""
+    },
+    {
+      "name": "Vessa Hospital",
+      "tiles": [
+        "Next.js",
+        "React",
+        "JWT Authentication",
+        "Leaflet",
+        "TailwindCSS",
+        "Nodemailer",
+        "Google Maps",
+        "Swiper"
+      ],
+      "descriptions": [
+        "O aplicație Next.js cu Google Maps, autentificare JWT, integrare prin Nodemailer pentru emailuri și un design curat și responsiv folosind TailwindCSS.",
+        "Cu Leaflet pentru hărți interactive, React Time Picker pentru programări și o experiență fluidă a utilizatorului îmbunătățită prin Swiper."
+      ],
+      "url": "https://github.com/sezginbozdemir/vessa",
+      "desktopImage": "/projects/vessa/desktop.png",
+      "mobileImage": "/projects/vessa/mobile.png",
+      "images": [
+        "/projects/vessa/1.png",
+        "/projects/vessa/2.png",
+        "/projects/vessa/3.png",
+        "/projects/vessa/4.png",
+        "/projects/vessa/5.png",
+        "/projects/vessa/6.png"
+      ],
+      "link": ""
+    },
+    {
+      "name": "Inventory Solutions",
+      "tiles": [
+        "Vite",
+        "React",
+        "Mantine",
+        "TailwindCSS",
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
+      "descriptions": [
+        "O aplicație full-stack cu un frontend React bazat pe Vite folosind Mantine și TailwindCSS și un backend Express cu MongoDB.",
+        "Având un frontend React bazat pe Vite stilizat cu Mantine și TailwindCSS, backend-ul este alimentat de Express și MongoDB, asigurând o arhitectură scalabilă și eficientă pentru interacțiuni fără întreruperi ale utilizatorilor.",
+        "Aplicația poate fi accesată folosind 'admin' ca utilizator și parolă pentru autentificare."
+      ],
+      "url": "https://github.com/sezginbozdemir/inventory-solutions",
+      "desktopImage": "/projects/stock/desktop.png",
+      "mobileImage": "/projects/stock/mobile.png",
+      "images": [
+        "/projects/stock/1.png",
+        "/projects/stock/2.png",
+        "/projects/stock/3.png",
+        "/projects/stock/4.png"
+      ],
+      "link": "https://inventory.sezdev.com"
+    },
+    {
+      "name": "Product Comparison",
+      "tiles": [
+        "React",
+        "Bootstrap",
+        "CSV Parsing",
+        "Affiliate Site",
+        "Product Comparison"
+      ],
+      "descriptions": [
+        "Un site afiliat alimentat de React care preia produsele din fișiere CSV și oferă o experiență intuitivă de comparare a produselor.",
+        "Product Comparison este un site afiliat construit cu React și Bootstrap, proiectat pentru a prelua datele produselor din fișiere CSV folosind PapaParse. Permite utilizatorilor să compare produsele eficient, oferind o experiență de cumpărături fluidă cu instrumente interactive de filtrare și sortare."
+      ],
+      "url": "https://github.com/sezginbozdemir/product-comparison",
+      "desktopImage": "/projects/comparison/desktop.png",
+      "mobileImage": "/projects/comparison/mobile.png",
+      "images": [
+        "/projects/comparison/1.png",
+        "/projects/comparison/2.png",
+        "/projects/comparison/3.png",
+        "/projects/comparison/4.png"
+      ],
+      "link": ""
+    }
+  ]
+}

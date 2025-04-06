@@ -12,6 +12,7 @@ import { ScrollTop } from "../shared/hooks/ScrollTop";
 import styles from "./Contact.module.css";
 import { ChangeEvent, FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 interface FormData {
   name: string;
   email: string;
@@ -19,6 +20,7 @@ interface FormData {
   message: string;
 }
 const Contact = () => {
+  const { t } = useTranslation();
   ScrollTop();
   const [statusMessage, setStatusMessage] = useState<string>("");
   const [statusType, setStatusType] = useState<"success" | "error" | "">("");
@@ -54,13 +56,13 @@ const Contact = () => {
         "bbUkLejFT4lzzGXLQ"
       )
       .then(() => {
-        setStatusMessage("Message sent successfully!");
+        setStatusMessage(t("contact.successMessage"));
         setStatusType("success");
         setFormData({ name: "", email: "", subject: "", message: "" });
       })
       .catch((err: any) => {
         console.error("Error sending email:", err);
-        setStatusMessage("Failed to send message. Please try again.");
+        setStatusMessage(t("contact.errorMessage"));
         setStatusType("error");
       });
   };
@@ -68,16 +70,16 @@ const Contact = () => {
     <Container size="xl" h="100%" w="100%">
       <Group className={styles.container} mt={100}>
         <Text className={styles.title}>
-          <span>.../Contact me</span>
+          <span>{t("contact.title")}</span>
         </Text>
         <Box className={styles.formBox}>
           <form onSubmit={handleSubmit}>
             <TextInput
               name="name"
-              label="Name"
+              label={t("contact.name")}
               value={formData.name}
               onChange={handleChange}
-              placeholder="Your name"
+              placeholder={t("contact.namePlaceholder")}
               required
               className={styles.inputField}
               classNames={{ input: styles.input }}
@@ -86,8 +88,8 @@ const Contact = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              label="Email"
-              placeholder="Your email"
+              label={t("contact.email")}
+              placeholder={t("contact.emailPlaceholder")}
               required
               type="email"
               className={styles.inputField}
@@ -97,8 +99,8 @@ const Contact = () => {
               name="subject"
               value={formData.subject}
               onChange={handleChange}
-              label="Subject"
-              placeholder="Subject"
+              label={t("contact.subject")}
+              placeholder={t("contact.subjectPlaceholder")}
               required
               type="subject"
               className={styles.inputField}
@@ -108,8 +110,8 @@ const Contact = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              label="Message"
-              placeholder="Your message"
+              label={t("contact.message")}
+              placeholder={t("contact.messagePlaceholder")}
               required
               minRows={4}
               className={styles.inputField}
@@ -117,7 +119,7 @@ const Contact = () => {
             />
             <Button px={50} type="submit" className={styles.button}>
               <Title fw={400} order={5}>
-                Submit
+                {t("contact.submitButton")}
               </Title>
             </Button>
             {statusMessage && (

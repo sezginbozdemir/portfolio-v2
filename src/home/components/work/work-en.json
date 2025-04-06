@@ -1,0 +1,27 @@
+{
+  "total": "6 years 6 months",
+  "title": "Work experience",
+  "experience": [
+    {
+      "start": "2018",
+      "end": "2021",
+      "duration": "3 years 3 months",
+      "company": "Emr Engros",
+      "role": "Frontend Developer | React"
+    },
+    {
+      "start": "2021",
+      "end": "2023",
+      "duration": "2 years",
+      "company": "Freelancer | Upwork",
+      "role": "Web Developer"
+    },
+    {
+      "start": "2023",
+      "end": "Present",
+      "duration": "Ongoing",
+      "company": "Pixado",
+      "role": "Full Stack Developer | Node.js, React"
+    }
+  ]
+}

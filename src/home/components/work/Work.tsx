@@ -1,8 +1,29 @@
 import { Box, Group, Stack, Text, Title } from "@mantine/core";
 import styles from "./Work.module.css";
-import data from "./work.json";
+import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
 const Work = () => {
+  const { i18n } = useTranslation();
+  const [workData, setWorkData] = useState<any>(null);
+
+  useEffect(() => {
+    const loadWorkData = async () => {
+      const lang = i18n.language;
+
+      if (lang === "ro") {
+        const workDataRo = await import("./work-ro.json");
+        setWorkData(workDataRo.default);
+      } else {
+        const workDataEn = await import("./work-en.json");
+        setWorkData(workDataEn.default);
+      }
+    };
+
+    loadWorkData();
+  }, [i18n.language]);
+
+  if (!workData) return null;
   return (
     <>
       <Box className={styles.headerBox}>
@@ -10,7 +31,7 @@ const Work = () => {
       </Box>
 
       <Box className={styles.workBox}>
-        {data.experience.map((job, index) => (
+        {workData.experience.map((job: any, index: number) => (
           <Group key={index} className={styles.workGroup}>
             <Group className={styles.innerGroup}>
               <Stack className={styles.timeStack}>
@@ -32,10 +53,10 @@ const Work = () => {
       <Box className={styles.headerBox}>
         <Stack my={20} gap={0}>
           <Title className={styles.time} order={5}>
-            Work experience
+            {workData.title}
           </Title>
           <Title order={5} className={styles.total}>
-            {data.total}
+            {workData.total}
           </Title>
         </Stack>
       </Box>

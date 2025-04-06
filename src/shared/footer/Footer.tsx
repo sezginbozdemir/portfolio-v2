@@ -2,12 +2,14 @@ import { Box, Container, Group, Stack, Text, Title } from "@mantine/core";
 import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
 import FooterLinks from "./FooterLinks";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const links = [
-    { name: "About", path: "/" },
-    { name: "Projects", path: "/projects" },
-    { name: "Contact", path: "/contact" },
+    { path: "/", name: t("nav.about") },
+    { path: "/projects", name: t("nav.projects") },
+    { path: "/contact", name: t("nav.contact") },
   ];
 
   return (
@@ -55,9 +57,9 @@ const Footer = () => {
                 Site
               </Title>
               <Stack>
-                <Text>Styled with Mantine /</Text>
-                <Text>Powered by Vite /</Text>
-                <Text>Built with TypeScript /</Text>
+                <Text>{t("site.line1")}</Text>
+                <Text>{t("site.line2")}</Text>
+                <Text>{t("site.line3")}</Text>
               </Stack>
             </Stack>
           </Stack>
