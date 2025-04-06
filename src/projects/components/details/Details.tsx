@@ -109,7 +109,6 @@ const Details: React.FC<DetailsProps> = ({
         centered
       >
         <Carousel
-          loop
           getEmblaApi={setEmbla}
           classNames={{
             root: styles.carouselRoot,
