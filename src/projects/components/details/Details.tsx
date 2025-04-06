@@ -38,9 +38,7 @@ const Details: React.FC<DetailsProps> = ({
   return (
     <>
       <Stack
-        style={{
-          order: isMobile ? 2 : index % 2 === 0 ? 1 : 2,
-        }}
+        style={{ zIndex: 1000, order: isMobile ? 2 : index % 2 === 0 ? 1 : 2 }}
         className={styles.detailStack}
       >
         <Stack gap={30}>

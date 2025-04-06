@@ -10,11 +10,11 @@ const Projects = () => {
     <Container size="xl" h="100%" w="100%">
       <Group mt={50}>
         <Box className={styles.first}></Box>
-        <Text className={styles.second}>
+        <Text style={{ zIndex: 1000 }} className={styles.second}>
           <span>.../Projects</span>
         </Text>
       </Group>
-      <Stack className={styles.projectStack} gap={150}>
+      <Stack mt={100} className={styles.projectStack} gap={150}>
         {data.projects.map((project, index) => (
           <Group className={styles.projectGroup} key={index} mt={50}>
             <Details
