@@ -35,6 +35,7 @@
 .modalContainer {
   padding: 0;
   background-color: var(--black);
+  z-index: 1200;
 }
 
 .modalContent {
