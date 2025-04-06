@@ -26,6 +26,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
         order: isMobile ? 1 : index % 2 === 0 ? 2 : 1,
       }}
     >
+      <Box className={styles.float} />
       {index % 2 === 0 && (
         <Box className={styles.mobileImgBox}>
           <Image

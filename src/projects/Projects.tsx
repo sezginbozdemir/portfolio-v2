@@ -1,4 +1,4 @@
-import { Box, Group, Stack, Text } from "@mantine/core";
+import { Box, Container, Group, Stack, Text } from "@mantine/core";
 import styles from "./Projects.module.css";
 import Details from "./components/details/Details";
 import ImageGallery from "./components/image-gallery/ImageGallery";
@@ -7,7 +7,7 @@ import { ScrollTop } from "../shared/hooks/ScrollTop";
 const Projects = () => {
   ScrollTop();
   return (
-    <>
+    <Container size="xl" h="100%" w="100%">
       <Group mt={50}>
         <Box className={styles.first}></Box>
         <Text className={styles.second}>
@@ -18,6 +18,7 @@ const Projects = () => {
         {data.projects.map((project, index) => (
           <Group className={styles.projectGroup} key={index} mt={50}>
             <Details
+              link={project.link}
               images={project.images}
               name={project.name}
               tiles={project.tiles}
@@ -34,7 +35,7 @@ const Projects = () => {
           </Group>
         ))}
       </Stack>
-    </>
+    </Container>
   );
 };
 export default Projects;

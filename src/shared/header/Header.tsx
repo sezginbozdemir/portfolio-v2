@@ -1,4 +1,4 @@
-import { Group, Stack, Title } from "@mantine/core";
+import { Box, Container, Group, Stack, Title } from "@mantine/core";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
 
@@ -9,8 +9,9 @@ const Header = () => {
     { to: "/contact", label: "Contact" },
   ];
   return (
-    <>
-      <Group mt={25} justify="space-between">
+    <Container size="xl" h="100%" w="100%">
+      <Group style={{ position: "relative" }} mt={25} justify="space-between">
+        <Box className={styles.float} />
         <Link to="/">
           <Stack className={styles.stack} gap={0}>
             <Title className={styles.stackTitle} order={3}>
@@ -30,7 +31,7 @@ const Header = () => {
             </Link>
           ))}
         </Group>
-        <Stack gap={0}>
+        <Stack style={{ zIndex: "1000" }} gap={0}>
           <Title className={styles.Title} order={3}>
             En
           </Title>
@@ -39,7 +40,7 @@ const Header = () => {
           </Title>
         </Stack>
       </Group>
-    </>
+    </Container>
   );
 };
 

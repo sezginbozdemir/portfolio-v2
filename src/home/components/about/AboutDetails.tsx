@@ -9,7 +9,7 @@ import sez from "../../../assets/images/sez.png";
 const AboutDetails = () => {
   return (
     <Group className={styles.mainGroup} align="start">
-      <Stack className={styles.tabStack}>
+      <Stack style={{ zIndex: "1000" }} className={styles.tabStack}>
         <Stack className={styles.whiteTab}>
           <Title order={3} className={styles.firstTitle}>
             {data.frontend.title}
@@ -22,7 +22,7 @@ const AboutDetails = () => {
             ))}
           </Group>
         </Stack>
-        <Group>
+        <Group justify="space-between">
           <Stack className={styles.smallTab}>
             <Title order={3} className={styles.title}>
               {data.styles.title}
@@ -73,7 +73,7 @@ const AboutDetails = () => {
           </Stack>
         </Group>
       </Stack>
-      <Box className={styles.imgBox}>
+      <Box style={{ zIndex: "1000" }} className={styles.imgBox}>
         <Box className={styles.imgOuter}>
           <Image src={sez} alt="fullstack dev" className={styles.img} />
         </Box>

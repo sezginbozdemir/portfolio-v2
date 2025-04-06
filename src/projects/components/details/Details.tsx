@@ -9,6 +9,7 @@ import { Carousel, Embla, useAnimationOffsetEffect } from "@mantine/carousel";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { useState } from "react";
 import { useMediaQuery } from "@mantine/hooks";
+import { FiLink } from "react-icons/fi";
 
 interface DetailsProps {
   name: string;
@@ -17,6 +18,7 @@ interface DetailsProps {
   url: string;
   images: string[];
   index: number;
+  link: string;
 }
 const Details: React.FC<DetailsProps> = ({
   name,
@@ -25,6 +27,7 @@ const Details: React.FC<DetailsProps> = ({
   url,
   images,
   index,
+  link,
 }) => {
   const TRANSITION_DURATION = 200;
   const [opened, setOpened] = useState(false);
@@ -54,6 +57,14 @@ const Details: React.FC<DetailsProps> = ({
               );
             })}
           </Group>
+          {link && (
+            <Box className={styles.mobileLink}>
+              <LinkButton url={link} icon={FiLink} />
+              <Title className={styles.buttonTitle} order={4}>
+                Visit site
+              </Title>
+            </Box>
+          )}
         </Stack>
         <Stack gap={30}>
           {descriptions.map((description, index) => (
@@ -70,7 +81,7 @@ const Details: React.FC<DetailsProps> = ({
             className={styles.imagesButton}
             onClick={() => setOpened(true)}
           >
-            <Title className={styles.buttonTitle} order={5}>
+            <Title className={styles.buttonTitle} order={4}>
               +{images.length}
             </Title>
 
@@ -98,6 +109,7 @@ const Details: React.FC<DetailsProps> = ({
         centered
       >
         <Carousel
+          loop
           getEmblaApi={setEmbla}
           classNames={{
             root: styles.carouselRoot,

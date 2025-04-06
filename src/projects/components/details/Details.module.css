@@ -86,3 +86,12 @@
   height: 100%;
   width: 100%;
 }
+.mobileLink {
+  display: none;
+  width: 100%;
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+}

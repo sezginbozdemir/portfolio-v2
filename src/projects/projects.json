@@ -128,7 +128,8 @@
       ],
       "descriptions": [
         "A full-stack application with a Vite-powered React frontend using Mantine and TailwindCSS, and an Express backend with MongoDB.",
-        "featuring a Vite-based React frontend styled with Mantine and TailwindCSS. The backend is powered by Express and MongoDB, ensuring a scalable and efficient architecture for seamless user interactions."
+        "featuring a Vite-based React frontend styled with Mantine and TailwindCSS. The backend is powered by Express and MongoDB, ensuring a scalable and efficient architecture for seamless user interactions.",
+        "The app can be accessed using 'admin' as both the username and password for authentication."
       ],
       "url": "https://github.com/sezginbozdemir/inventory-solutions",
       "desktopImage": "/projects/stock/desktop.png",
@@ -139,7 +140,7 @@
         "/projects/stock/3.png",
         "/projects/stock/4.png"
       ],
-      "link": ""
+      "link": "https://inventory.sezdev.com"
     },
     {
       "name": "Product Comparison",

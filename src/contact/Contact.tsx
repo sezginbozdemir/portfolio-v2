@@ -6,6 +6,7 @@ import {
   Textarea,
   Button,
   Title,
+  Container,
 } from "@mantine/core";
 import { ScrollTop } from "../shared/hooks/ScrollTop";
 import styles from "./Contact.module.css";
@@ -64,74 +65,76 @@ const Contact = () => {
       });
   };
   return (
-    <Group className={styles.container} mt={100}>
-      <Text className={styles.title}>
-        <span>.../Contact me</span>
-      </Text>
-      <Box className={styles.formBox}>
-        <form onSubmit={handleSubmit}>
-          <TextInput
-            name="name"
-            label="Name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Your name"
-            required
-            className={styles.inputField}
-            classNames={{ input: styles.input }}
-          />
-          <TextInput
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            label="Email"
-            placeholder="Your email"
-            required
-            type="email"
-            className={styles.inputField}
-            classNames={{ input: styles.input }}
-          />
-          <TextInput
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            label="Subject"
-            placeholder="Subject"
-            required
-            type="subject"
-            className={styles.inputField}
-            classNames={{ input: styles.input }}
-          />
-          <Textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            label="Message"
-            placeholder="Your message"
-            required
-            minRows={4}
-            className={styles.inputField}
-            classNames={{ input: styles.inputArea }}
-          />
-          <Button px={50} type="submit" className={styles.button}>
-            <Title fw={400} order={5}>
-              Submit
-            </Title>
-          </Button>
-          {statusMessage && (
-            <Text
-              mt={30}
-              size="sm"
-              style={{
-                color: statusType === "error" ? "red" : "var(--white)",
-              }}
-            >
-              {statusMessage}
-            </Text>
-          )}
-        </form>
-      </Box>
-    </Group>
+    <Container size="xl" h="100%" w="100%">
+      <Group className={styles.container} mt={100}>
+        <Text className={styles.title}>
+          <span>.../Contact me</span>
+        </Text>
+        <Box className={styles.formBox}>
+          <form onSubmit={handleSubmit}>
+            <TextInput
+              name="name"
+              label="Name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Your name"
+              required
+              className={styles.inputField}
+              classNames={{ input: styles.input }}
+            />
+            <TextInput
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              label="Email"
+              placeholder="Your email"
+              required
+              type="email"
+              className={styles.inputField}
+              classNames={{ input: styles.input }}
+            />
+            <TextInput
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
+              label="Subject"
+              placeholder="Subject"
+              required
+              type="subject"
+              className={styles.inputField}
+              classNames={{ input: styles.input }}
+            />
+            <Textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              label="Message"
+              placeholder="Your message"
+              required
+              minRows={4}
+              className={styles.inputField}
+              classNames={{ input: styles.inputArea }}
+            />
+            <Button px={50} type="submit" className={styles.button}>
+              <Title fw={400} order={5}>
+                Submit
+              </Title>
+            </Button>
+            {statusMessage && (
+              <Text
+                mt={30}
+                size="sm"
+                style={{
+                  color: statusType === "error" ? "red" : "var(--white)",
+                }}
+              >
+                {statusMessage}
+              </Text>
+            )}
+          </form>
+        </Box>
+      </Group>
+    </Container>
   );
 };
 

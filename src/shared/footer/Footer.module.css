@@ -1,8 +1,14 @@
 .mainGroup {
+  border-top: 1px solid var(--dark-gray);
+  padding-top: 1rem;
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 2rem;
   }
+}
+.linkGroup {
+  border-top: 1px solid var(--dark-gray);
+  padding-top: 1rem;
 }
 
 .Title {
@@ -22,6 +28,7 @@
 }
 .stack {
   flex: 8;
+  position: relative;
   @media (max-width: 1024px) {
     flex: 6;
   }
@@ -81,4 +88,20 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+.full {
+  flex: 4;
+}
+.lastname {
+  flex: 8;
+}
+
+.float {
+  position: absolute;
+  top: 6rem;
+  left: -5rem;
+  width: 800px;
+  height: 800px;
+  border: 2px solid var(--dark-gray);
+  border-radius: 50%;
 }

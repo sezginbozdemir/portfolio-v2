@@ -3,6 +3,7 @@ import styles from "./Footer.module.css";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa6";
 import { MdAlternateEmail } from "react-icons/md";
+import { FiDownload } from "react-icons/fi";
 
 const FooterLinks = () => {
   const linkData = [
@@ -31,10 +32,21 @@ const FooterLinks = () => {
       icon: <FaFacebookF size={18} color="var(--white)" />,
       link: "https://www.facebook.com/SezginBozdemir/",
     },
+    {
+      name: "Resume",
+      icon: <FiDownload size={18} color="var(--white)" />,
+      link: "/cv.pdf",
+    },
   ];
 
   return (
-    <Group justify="center" mb={100} mt={50}>
+    <Group
+      style={{ zIndex: 1000 }}
+      className={styles.linkGroup}
+      justify="center"
+      mb={100}
+      mt={50}
+    >
       {linkData.map((link, index) => (
         <Button
           key={index}
