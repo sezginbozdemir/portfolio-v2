@@ -14,7 +14,7 @@
     "@mantine/carousel": "^7.17.3",
     "@mantine/core": "^7.16.2",
     "@mantine/hooks": "^7.16.2",
-    "embla-carousel-react": "^7.1.0",
+    "embla-carousel-react": "^8.6.0",
     "i18next": "^24.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
