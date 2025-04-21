@@ -70,7 +70,7 @@ const Contact = () => {
     <Container size="xl" h="100%" w="100%">
       <Group className={styles.container} mt={100}>
         <Text className={styles.title}>
-          TEST<span>{t("contact.title")}</span>
+          <span>{t("contact.title")}</span>
         </Text>
         <Box className={styles.formBox}>
           <form onSubmit={handleSubmit}>
