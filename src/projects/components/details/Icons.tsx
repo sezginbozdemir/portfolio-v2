@@ -14,6 +14,7 @@ import {
   SiTurborepo,
   SiLeaflet,
   SiSwiper,
+  SiPrisma,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 export const tileIcons: Record<string, React.ElementType> = {
@@ -37,4 +38,5 @@ export const tileIcons: Record<string, React.ElementType> = {
   Nodemailer: FaMailBulk,
   "Google Maps": FaMap,
   Swiper: SiSwiper,
+  Prisma: SiPrisma,
 };
