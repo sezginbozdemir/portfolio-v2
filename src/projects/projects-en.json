@@ -1,6 +1,32 @@
 {
   "projects": [
     {
+      "name": "Guided Tours",
+      "tiles": [
+        "Next.js",
+        "React",
+        "Mantine",
+        "TypeScript",
+        "Node.js",
+        "Prisma"
+      ],
+      "descriptions": [
+        "A full-stack web application powered by Node.js, React, and Prisma. It allows admins to create and manage guided tours through a powerful custom dashboard.",
+        "The platform offers a seamless customer experience on the frontend while handling backend operations like tour creation, updates, and user management efficiently."
+      ],
+
+      "url": "https://github.com/sezginbozdemir/guided-tours",
+      "desktopImage": "/projects/guided/guided.png",
+      "mobileImage": "/projects/guided/guided-mobile.png",
+      "images": [
+        "/projects/guided/1.png",
+        "/projects/guided/2.png",
+        "/projects/guided/3.png",
+        "/projects/guided/4.png"
+      ],
+      "link": ""
+    },
+    {
       "name": "Econos",
       "tiles": ["Next.js", "React", "Mantine", "TypeScript", "PostCSS"],
       "descriptions": [

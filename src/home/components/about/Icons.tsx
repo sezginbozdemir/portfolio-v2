@@ -23,7 +23,7 @@ import {
   SiNginx,
   SiDocker,
   SiGithubactions,
-  SiGnubash,
+  SiPrisma,
   SiNpm,
   SiReactbootstrap,
   SiMedusa,
@@ -76,7 +76,7 @@ export const iconMap: Record<string, React.ReactElement> = {
   SiNginx: <SiNginx />,
   SiDocker: <SiDocker />,
   SiGithubactions: <SiGithubactions />,
-  SiGnubash: <SiGnubash />,
+  SiPrisma: <SiPrisma />,
   SiNpm: <SiNpm />,
   FaYarn: <FaYarn />,
 };

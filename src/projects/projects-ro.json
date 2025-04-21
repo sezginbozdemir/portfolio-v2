@@ -1,6 +1,32 @@
 {
   "projects": [
     {
+      "name": "Guided Tours",
+      "tiles": [
+        "Next.js",
+        "React",
+        "Mantine",
+        "TypeScript",
+        "Node.js",
+        "Prisma"
+      ],
+      "descriptions": [
+        "O aplicație web full-stack construită cu Node.js, React și Prisma. Permite administratorilor să creeze și să gestioneze tururi ghidate printr-un panou de control personalizat și puternic.",
+        "Platforma oferă o experiență fluidă pentru utilizatori pe partea de frontend, gestionând eficient operațiuni de backend precum crearea, actualizarea tururilor și administrarea utilizatorilor."
+      ],
+      "url": "https://github.com/sezginbozdemir/guided-tours",
+      "desktopImage": "/projects/guided/guided.png",
+      "mobileImage": "/projects/guided/guided-mobile.png",
+      "images": [
+        "/projects/guided/1.png",
+        "/projects/guided/2.png",
+        "/projects/guided/3.png",
+        "/projects/guided/4.png"
+      ],
+      "link": ""
+    },
+
+    {
       "name": "Econos",
       "tiles": ["Next.js", "React", "Mantine", "TypeScript", "PostCSS"],
       "descriptions": [
