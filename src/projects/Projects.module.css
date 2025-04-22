@@ -1,6 +1,6 @@
 .projectStack {
   @media (max-width: 1024px) {
-    gap: 0;
+    gap: 8rem;
   }
 }
 .projectGroup {

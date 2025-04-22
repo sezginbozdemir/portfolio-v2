@@ -3,20 +3,14 @@ import styles from "./ImageGallery.module.css";
 import { FiLink } from "react-icons/fi";
 import LinkButton from "../../../shared/components/linkButton/LinkButton";
 import { useMediaQuery } from "@mantine/hooks";
+import { Project } from "../../Projects";
 
 interface ImageGalleryProps {
-  desktop: string;
-  mobile: string;
   index: number;
-  link: string;
+  project: Project;
 }
 
-const ImageGallery: React.FC<ImageGalleryProps> = ({
-  desktop,
-  mobile,
-  index,
-  link,
-}) => {
+const ImageGallery: React.FC<ImageGalleryProps> = ({ index, project }) => {
   const isMobile = useMediaQuery("(max-width: 1024px)");
 
   return (
@@ -30,7 +24,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
       {index % 2 === 0 && (
         <Box className={styles.mobileImgBox}>
           <Image
-            src={mobile}
+            src={project.mobileImage}
             alt="Fullstack dev"
             className={styles.mobileImg}
           />
@@ -38,13 +32,13 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
       )}
       <Box className={styles.desktopImgBox}>
         <Image
-          src={desktop}
+          src={project.desktopImage}
           alt="Fullstack dev"
           className={styles.desktopImg}
         />
-        {link && (
+        {project.link && (
           <Box className={styles.floatBox}>
-            <LinkButton url={link} icon={FiLink} />
+            <LinkButton url={project.link} icon={FiLink} />
           </Box>
         )}
         <Box className={styles.border} />
@@ -52,7 +46,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
       {index % 2 !== 0 && (
         <Box className={styles.mobileImgBox}>
           <Image
-            src={mobile}
+            src={project.mobileImage}
             alt="Fullstack dev"
             className={styles.mobileImg}
           />

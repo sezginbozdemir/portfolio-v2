@@ -1,16 +1,42 @@
-import { Box, Container, Group, Stack, Text } from "@mantine/core";
+import {
+  Box,
+  Container,
+  Group,
+  Image,
+  Stack,
+  Text,
+  Title,
+} from "@mantine/core";
+import { Carousel } from "@mantine/carousel";
 import styles from "./Projects.module.css";
 import Details from "./components/details/Details";
 import ImageGallery from "./components/image-gallery/ImageGallery";
 import { ScrollTop } from "../shared/hooks/ScrollTop";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
+import ProjectCarousel from "./components/project-carousel/ProjectCarousel";
+
+export interface Project {
+  name: string;
+  tiles: string[];
+  descriptions: string[];
+  url: string;
+  images: string[];
+  link: string;
+  desktopImage: string;
+  mobileImage: string;
+}
+
+export interface ProjectData {
+  projects: Project[];
+}
+
 const Projects = () => {
   ScrollTop();
 
   const { t } = useTranslation();
   const { i18n } = useTranslation();
-  const [projectsData, setProjectsData] = useState<any>(null);
+  const [projectsData, setProjectsData] = useState<ProjectData | null>(null);
 
   useEffect(() => {
     const loadWorkData = async () => {
@@ -38,24 +64,16 @@ const Projects = () => {
         </Text>
       </Group>
       <Stack mt={100} className={styles.projectStack} gap={150}>
-        {projectsData.projects.map((project: any, index: number) => (
-          <Group className={styles.projectGroup} key={index} mt={50}>
-            <Details
-              link={project.link}
-              images={project.images}
-              name={project.name}
-              tiles={project.tiles}
-              descriptions={project.descriptions}
-              url={project.url}
-              index={index}
-            />
-            <ImageGallery
-              index={index}
-              desktop={project.desktopImage}
-              mobile={project.mobileImage}
-              link={project.link}
-            />
-          </Group>
+        {projectsData.projects.map((project: Project, index: number) => (
+          <Stack>
+            <Group className={styles.projectGroup} key={index} mt={50}>
+              <Details project={project} index={index} />
+              <ImageGallery index={index} project={project} />
+            </Group>
+            <Group align="center" justify="center">
+              <ProjectCarousel images={project.images} />
+            </Group>
+          </Stack>
         ))}
       </Stack>
     </Container>

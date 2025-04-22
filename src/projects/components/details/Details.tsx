@@ -10,25 +10,13 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { useState } from "react";
 import { useMediaQuery } from "@mantine/hooks";
 import { FiLink } from "react-icons/fi";
+import { Project } from "../../Projects";
 
 interface DetailsProps {
-  name: string;
-  tiles: string[];
-  descriptions: string[];
-  url: string;
-  images: string[];
   index: number;
-  link: string;
+  project: Project;
 }
-const Details: React.FC<DetailsProps> = ({
-  name,
-  tiles,
-  descriptions,
-  url,
-  images,
-  index,
-  link,
-}) => {
+const Details: React.FC<DetailsProps> = ({ project, index }) => {
   const TRANSITION_DURATION = 200;
   const [opened, setOpened] = useState(false);
   const [embla, setEmbla] = useState<Embla | null>(null);
@@ -43,10 +31,10 @@ const Details: React.FC<DetailsProps> = ({
       >
         <Stack gap={30}>
           <Title order={3} className={styles.name}>
-            {name}
+            {project.name}
           </Title>
           <Group>
-            {tiles.map((tile, index) => {
+            {project.tiles.map((tile, index) => {
               const Icon = tileIcons[tile];
               return (
                 <Text key={index} className={styles.tile}>
@@ -55,9 +43,9 @@ const Details: React.FC<DetailsProps> = ({
               );
             })}
           </Group>
-          {link && (
+          {project.link && (
             <Box className={styles.mobileLink}>
-              <LinkButton url={link} icon={FiLink} />
+              <LinkButton url={project.link} icon={FiLink} />
               <Title className={styles.buttonTitle} order={4}>
                 Visit site
               </Title>
@@ -65,7 +53,7 @@ const Details: React.FC<DetailsProps> = ({
           )}
         </Stack>
         <Stack gap={30}>
-          {descriptions.map((description, index) => (
+          {project.descriptions.map((description, index) => (
             <Title key={index} order={5} className={styles.description}>
               {description}
             </Title>
@@ -73,14 +61,14 @@ const Details: React.FC<DetailsProps> = ({
         </Stack>
         <Group w="100%">
           <Box className={styles.box}>
-            <LinkButton url={url} icon={TbBrandGithubFilled} />
+            <LinkButton url={project.url} icon={TbBrandGithubFilled} />
           </Box>
           <Button
             className={styles.imagesButton}
             onClick={() => setOpened(true)}
           >
             <Title className={styles.buttonTitle} order={4}>
-              +{images.length}
+              +{project.images.length}
             </Title>
 
             <IoImages size={25} />
@@ -122,7 +110,7 @@ const Details: React.FC<DetailsProps> = ({
           loop
           align="center"
         >
-          {images.map((image, index) => (
+          {project.images.map((image, index) => (
             <Carousel.Slide key={index}>
               <Image
                 src={image}
