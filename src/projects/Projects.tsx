@@ -1,13 +1,4 @@
-import {
-  Box,
-  Container,
-  Group,
-  Image,
-  Stack,
-  Text,
-  Title,
-} from "@mantine/core";
-import { Carousel } from "@mantine/carousel";
+import { Box, Container, Group, Stack, Text } from "@mantine/core";
 import styles from "./Projects.module.css";
 import Details from "./components/details/Details";
 import ImageGallery from "./components/image-gallery/ImageGallery";
