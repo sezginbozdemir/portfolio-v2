@@ -1,7 +1,42 @@
 {
   "projects": [
     {
-      "name": "Guided Tours",
+      "name": "Snoya – Custom Headless Shopify Storefront",
+      "tiles": [
+        "Remix",
+        "React",
+        "Shadcn",
+        "TypeScript",
+        "Zustand",
+        "TailwindCSS",
+        "Shopify"
+      ],
+      "descriptions": [
+        "Snoya is a fully customizable, headless e-commerce application built with Remix, React, and TypeScript. It uses Shopify as the backend for customers product, cart, and checkout management, while the frontend is entirely custom and deployed independently (requires external hosting outside Shopify).",
+        "Integrated with Shopify’s classic customer account system. It supports email/password-based login, registration, and password recovery using Shopify’s legacy authentication system.",
+        "Most visual elements like homepage banners, section texts, and featured collections are dynamically configurable via Shopify Admin using metafields or custom fields, enabling content updates without code changes.",
+        "State management is handled with Zustand for optimistic immediate cart updates, styles are built with TailwindCSS and Shadcn UI components, and layout is fully responsive for both mobile and desktop."
+      ],
+
+      "url": "https://github.com/sezginbozdemir/shopify-headless-remix",
+      "desktopImage": "/projects/snoya/desktop.png",
+      "mobileImage": "/projects/snoya/mobile.png",
+      "images": [
+        "/projects/snoya/1.png",
+        "/projects/snoya/2.png",
+        "/projects/snoya/3.png",
+        "/projects/snoya/4.png",
+        "/projects/snoya/5.png",
+        "/projects/snoya/6.png",
+        "/projects/snoya/7.png",
+        "/projects/snoya/8.png",
+        "/projects/snoya/9.png"
+      ],
+      "link": "https://snoya.sezdev.com"
+    },
+
+    {
+      "name": "Guided Tours – Admin Managed Tour Platform",
       "tiles": [
         "Next.js",
         "React",
@@ -27,7 +62,7 @@
       "link": ""
     },
     {
-      "name": "Econos",
+      "name": "Econos – High-Performance Customer Web App",
       "tiles": ["Next.js", "React", "Mantine", "TypeScript", "PostCSS"],
       "descriptions": [
         "A high-performance customer-facing web application built with Next.js and React, styled using Mantine and PostCSS for a modern and seamless user experience.",
@@ -48,7 +83,7 @@
       "link": ""
     },
     {
-      "name": "Vps",
+      "name": "VPS – Lightweight React App",
       "tiles": ["Vite", "React", "Mantine", "TypeScript", "PostCSS"],
       "descriptions": [
         "A Vite-powered React app using Mantine for UI components and styled with PostCSS and TypeScript for improved development experience.",
@@ -65,7 +100,7 @@
       "link": ""
     },
     {
-      "name": "Pixado",
+      "name": "Pixado – Fast Animated UI Showcase",
       "tiles": ["Vite", "React", "TypeScript", "Bootstrap", "Framer Motion"],
       "descriptions": [
         "A fast and responsive Vite-powered React app using TypeScript, Bootstrap, and Framer Motion for smooth animations.",
@@ -84,7 +119,7 @@
       "link": ""
     },
     {
-      "name": "Nova Lens",
+      "name": "Nova Lens – E-commerce Monorepo with Medusa",
       "tiles": [
         "Next.js",
         "Medusa Js",
@@ -112,7 +147,7 @@
       "link": ""
     },
     {
-      "name": "Vessa Hospital",
+      "name": "Vessa Hospital – Medical Services Portal",
       "tiles": [
         "Next.js",
         "React",
@@ -142,7 +177,7 @@
       "link": ""
     },
     {
-      "name": "Inventory Solutions",
+      "name": "Inventory Solutions – Full-Stack Inventory Dashboard",
       "tiles": [
         "Vite",
         "React",
@@ -169,7 +204,7 @@
       "link": "https://inventory.sezdev.com"
     },
     {
-      "name": "Product Comparison",
+      "name": "Product Comparison – CSV-Based Affiliate Catalog ",
       "tiles": [
         "React",
         "Bootstrap",

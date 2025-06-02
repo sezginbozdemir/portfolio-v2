@@ -1,6 +1,39 @@
 {
   "projects": [
     {
+      "name": "Snoya – Headless Shopify Storefront",
+      "tiles": [
+        "Remix",
+        "React",
+        "Shadcn",
+        "TypeScript",
+        "Zustand",
+        "TailwindCSS",
+        "Shopify"
+      ],
+      "descriptions": [
+        "Snoya este o aplicație e-commerce headless complet personalizabilă, construită cu Remix, React și TypeScript. Folosește Shopify ca backend pentru gestionarea clienților, produselor, coșului și checkout-ului, în timp ce frontend-ul este complet personalizat și găzduit independent (necesită hosting extern în afara Shopify).",
+        "Este integrată cu sistemul clasic de conturi de client Shopify. Suportă autentificare cu email și parolă, înregistrare și recuperare a parolei folosind sistemul vechi de autentificare Shopify.",
+        "Majoritatea elementelor vizuale precum bannerele de pe homepage, textele secțiunilor și colecțiile evidențiate pot fi configurate din Shopify Admin prin metafield-uri sau câmpuri personalizate, permițând actualizări de conținut fără modificări în cod.",
+        "Managementul stării este realizat cu Zustand pentru actualizări optimiste și imediate ale coșului, stilizarea este făcută cu TailwindCSS și componente Shadcn UI, iar layout-ul este complet responsiv, atât pentru mobil, cât și pentru desktop."
+      ],
+      "url": "https://github.com/sezginbozdemir/shopify-headless-remix",
+      "desktopImage": "/projects/snoya/desktop.png",
+      "mobileImage": "/projects/snoya/mobile.png",
+      "images": [
+        "/projects/snoya/1.png",
+        "/projects/snoya/2.png",
+        "/projects/snoya/3.png",
+        "/projects/snoya/4.png",
+        "/projects/snoya/5.png",
+        "/projects/snoya/6.png",
+        "/projects/snoya/7.png",
+        "/projects/snoya/8.png",
+        "/projects/snoya/9.png"
+      ],
+      "link": "https://snoya.sezdev.com"
+    },
+    {
       "name": "Guided Tours",
       "tiles": [
         "Next.js",

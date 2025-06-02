@@ -32,6 +32,10 @@ import {
   SiJsonwebtokens,
   SiExpress,
   SiTurborepo,
+  SiVitest,
+  SiPm2,
+  SiDrizzle,
+  SiShadcnui,
 } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { FaBootstrap, FaSass, FaShopify, FaYarn } from "react-icons/fa6";
@@ -51,6 +55,7 @@ export const iconMap: Record<string, React.ReactElement> = {
   SiGraphql: <SiGraphql />,
   TbBrandReactNative: <TbBrandReactNative />,
   SiTestinglibrary: <SiTestinglibrary />,
+  SiVitest: <SiVitest />,
   ///Styles
   TbBrandCss3: <TbBrandCss3 />,
   SiPostcss: <SiPostcss />,
@@ -60,7 +65,8 @@ export const iconMap: Record<string, React.ReactElement> = {
   FaBootstrap: <FaBootstrap />,
   SiTailwindcss: <SiTailwindcss />,
   FaSass: <FaSass />,
-  TbBrandFramer: <TbBrandFramerMotion />,
+  TbBrandFramerMotion: <TbBrandFramerMotion />,
+  ShadCn: <SiShadcnui />,
 
   ////Backend
   SiPostgresql: <SiPostgresql />,
@@ -71,6 +77,7 @@ export const iconMap: Record<string, React.ReactElement> = {
   SiJsonwebtokens: <SiJsonwebtokens />,
   SiRest: <TbApi />,
   SiExpress: <SiExpress />,
+  Drizzle: <SiDrizzle />,
   ////DevOps
   SiTurborepo: <SiTurborepo />,
   SiNginx: <SiNginx />,
@@ -79,4 +86,5 @@ export const iconMap: Record<string, React.ReactElement> = {
   SiPrisma: <SiPrisma />,
   SiNpm: <SiNpm />,
   FaYarn: <FaYarn />,
+  pm2: <SiPm2 />,
 };

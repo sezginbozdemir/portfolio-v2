@@ -22,10 +22,10 @@ const ProjectCarousel = ({ images }: Props) => {
         {images.map((image, index) => (
           <Carousel.Slide key={index}>
             <Image
+              style={{ objectPosition: "left" }}
               src={image}
               height="100%"
               width="100%"
-              fit="cover"
               alt="Project image"
             />
           </Carousel.Slide>

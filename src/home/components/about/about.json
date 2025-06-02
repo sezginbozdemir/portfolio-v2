@@ -5,16 +5,18 @@
       { "name": "TypeScript", "icon": "TbBrandTypescript" },
       { "name": "React", "icon": "TbBrandReact" },
       { "name": "Context API", "icon": "TbApi" },
+      { "name": "Zustand", "icon": "" },
       { "name": "Redux", "icon": "SiRedux" },
       { "name": "Next.js", "icon": "SiNextdotjs" },
       { "name": "Vite", "icon": "TbBrandVite" },
       { "name": "Testing Library", "icon": "SiTestinglibrary" },
+      { "name": "Vitest", "icon": "SiVitest" },
       { "name": "Jest", "icon": "SiJest" },
       { "name": "GraphQL", "icon": "SiGraphql" },
       { "name": "React Native", "icon": "TbBrandReactNative" },
       { "name": "React Bootstrap", "icon": "SiReactbootstrap" },
       { "name": "Medusa JS", "icon": "SiMedusa" },
-      { "name": "Shopify API", "icon": "FaShopify" }
+      { "name": "Shopify", "icon": "FaShopify" }
     ]
   },
   "styles": {
@@ -25,6 +27,7 @@
       { "name": "PostCSS", "icon": "SiPostcss" },
       { "name": "MUI", "icon": "SiMui" },
       { "name": "Material UI", "icon": "SiMaterialdesign" },
+      { "name": "ShadCn", "icon": "ShadCn" },
       { "name": "Mantine", "icon": "SiMantine" },
       { "name": "Bootstrap", "icon": "FaBootstrap" },
       { "name": "Tailwind CSS", "icon": "SiTailwindcss" },
@@ -42,7 +45,8 @@
       { "name": "Prisma", "icon": "SiPrisma" },
       { "name": "JWT", "icon": "SiJsonwebtokens" },
       { "name": "REST", "icon": "SiRest" },
-      { "name": "Express", "icon": "SiExpress" }
+      { "name": "Express", "icon": "SiExpress" },
+      { "name": "Drizzle", "icon": "Drizzle" }
     ]
   },
   "devops": {
@@ -54,6 +58,7 @@
       { "name": "yalc", "icon": "SiNpm" },
       { "name": "yarn", "icon": "FaYarn" },
       { "name": "npm", "icon": "SiNpm" },
+      { "name": "pm2", "icon": "pm2" },
       { "name": "TurboRepo", "icon": "SiTurborepo" }
     ]
   },
