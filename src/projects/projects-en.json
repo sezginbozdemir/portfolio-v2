@@ -18,7 +18,7 @@
         "State management is handled with Zustand for optimistic immediate cart updates, styles are built with TailwindCSS and Shadcn UI components, and layout is fully responsive for both mobile and desktop."
       ],
 
-      "url": "https://github.com/sezginbozdemir/shopify-headless-remix",
+      "url": "https://github.com/sezginbozdemir/headless-shopify-remix",
       "desktopImage": "/projects/snoya/desktop.png",
       "mobileImage": "/projects/snoya/mobile.png",
       "images": [

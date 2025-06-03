@@ -17,7 +17,7 @@
         "Majoritatea elementelor vizuale precum bannerele de pe homepage, textele secțiunilor și colecțiile evidențiate pot fi configurate din Shopify Admin prin metafield-uri sau câmpuri personalizate, permițând actualizări de conținut fără modificări în cod.",
         "Managementul stării este realizat cu Zustand pentru actualizări optimiste și imediate ale coșului, stilizarea este făcută cu TailwindCSS și componente Shadcn UI, iar layout-ul este complet responsiv, atât pentru mobil, cât și pentru desktop."
       ],
-      "url": "https://github.com/sezginbozdemir/shopify-headless-remix",
+      "url": "https://github.com/sezginbozdemir/headless-shopify-remix",
       "desktopImage": "/projects/snoya/desktop.png",
       "mobileImage": "/projects/snoya/mobile.png",
       "images": [
