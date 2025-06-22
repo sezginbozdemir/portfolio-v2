@@ -1,5 +1,5 @@
 {
-  "total": "6 ani 6 luni",
+  "total": "6 ani",
   "title": "Experiență de munca",
   "experience": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "start": "2023",
-      "end": "Prezent",
-      "duration": "În curs",
+      "end": "2025",
+      "duration": "2 ani",
       "company": "Pixado",
       "role": "Full Stack Developer"
     }

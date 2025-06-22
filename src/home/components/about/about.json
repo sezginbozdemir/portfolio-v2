@@ -22,11 +22,8 @@
   "styles": {
     "title": "Styles",
     "skills": [
-      { "name": "SCSS", "icon": "TbBrandCss3" },
+      { "name": "CSS", "icon": "TbBrandCss3" },
       { "name": "SASS", "icon": "FaSass" },
-      { "name": "PostCSS", "icon": "SiPostcss" },
-      { "name": "MUI", "icon": "SiMui" },
-      { "name": "Material UI", "icon": "SiMaterialdesign" },
       { "name": "ShadCn", "icon": "ShadCn" },
       { "name": "Mantine", "icon": "SiMantine" },
       { "name": "Bootstrap", "icon": "FaBootstrap" },
@@ -38,7 +35,6 @@
     "title": "Back-end",
     "skills": [
       { "name": "PostgreSQL", "icon": "SiPostgresql" },
-      { "name": "MySQL", "icon": "SiMysql" },
       { "name": "MongoDB", "icon": "SiMongodb" },
       { "name": "Redis", "icon": "SiRedis" },
       { "name": "Node", "icon": "FaNodeJs" },

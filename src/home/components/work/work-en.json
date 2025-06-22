@@ -1,5 +1,5 @@
 {
-  "total": "6 years 6 months",
+  "total": "6 years",
   "title": "Work experience",
   "experience": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "start": "2023",
-      "end": "Present",
-      "duration": "Ongoing",
+      "end": "2025",
+      "duration": "2 years",
       "company": "Pixado",
       "role": "Full Stack Developer"
     }

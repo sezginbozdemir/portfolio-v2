@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.code {
+  font-size: 10rem;
+  font-weight: 800;
+}
+
+.message {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
