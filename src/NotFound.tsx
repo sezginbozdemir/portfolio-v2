@@ -1,4 +1,4 @@
-import { Button, Container, Title, Text } from "@mantine/core";
+import { Button, Container, Text } from "@mantine/core";
 import { Link } from "react-router-dom";
 import styles from "./NotFound.module.css";
 
