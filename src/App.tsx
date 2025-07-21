@@ -6,6 +6,7 @@ import AppRouter from "./AppRouter";
 import "./i18n";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const theme = createTheme({
   fontFamily: "Fira Code",
@@ -16,11 +17,14 @@ const theme = createTheme({
 
 function App() {
   return (
-    <MantineProvider theme={theme}>
-      <I18nextProvider i18n={i18n}>
-        <AppRouter />
-      </I18nextProvider>
-    </MantineProvider>
+    <>
+      <SpeedInsights />
+      <MantineProvider theme={theme}>
+        <I18nextProvider i18n={i18n}>
+          <AppRouter />
+        </I18nextProvider>
+      </MantineProvider>
+    </>
   );
 }
 
