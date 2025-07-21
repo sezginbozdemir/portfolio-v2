@@ -80,7 +80,7 @@
         "/projects/econos/6.png",
         "/projects/econos/7.png"
       ],
-      "link": ""
+      "link": "https://econos.sezdev.com"
     },
     {
       "name": "VPS – Lightweight React App",
@@ -97,7 +97,7 @@
         "/projects/vps/2.png",
         "/projects/vps/3.png"
       ],
-      "link": ""
+      "link": "https://vps.sezdev.com"
     },
     {
       "name": "Pixado – Fast Animated UI Showcase",
@@ -116,7 +116,7 @@
         "/projects/pixado/4.png",
         "/projects/pixado/5.png"
       ],
-      "link": ""
+      "link": "https://pixado.sezdev.com"
     },
     {
       "name": "Nova Lens – E-commerce Monorepo with Medusa",
@@ -174,7 +174,7 @@
         "/projects/vessa/5.png",
         "/projects/vessa/6.png"
       ],
-      "link": ""
+      "link": "https://vessahospital.ro"
     },
     {
       "name": "Inventory Solutions – Full-Stack Inventory Dashboard",
@@ -225,7 +225,7 @@
         "/projects/comparison/3.png",
         "/projects/comparison/4.png"
       ],
-      "link": ""
+      "link": "https://comparison.sezdev.com"
     }
   ]
 }
