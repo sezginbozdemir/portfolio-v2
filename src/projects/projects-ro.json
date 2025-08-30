@@ -34,6 +34,21 @@
       "link": "https://snoya.sezdev.com"
     },
     {
+      "name": "Medical Dispencer UI",
+      "tiles": ["Javascript", "CSS"],
+      "descriptions": [
+        "Interfata usoara si accesibila pentru un distribuitor medical care ruleaza pe un single board computer. Proiectul include un design clar cu butoane mari usor de folosit pe touch. Optimizata pentru consum redus de resurse si functionare fiabila chiar si offline."
+      ],
+      "url": "https://github.com/sezginbozdemir/medical-dispencer-ui",
+      "desktopImage": "/projects/dispencer-ui/desktop.png",
+      "mobileImage": "/projects/dispencer-ui/mobile.png",
+      "images": [
+        "/projects/dispencer-ui/desktop.png",
+        "/projects/dispencer-ui/desktop.png"
+      ],
+      "link": ""
+    },
+    {
       "name": "Guided Tours",
       "tiles": [
         "Next.js",
@@ -198,7 +213,7 @@
         "/projects/stock/3.png",
         "/projects/stock/4.png"
       ],
-      "link": "https://inventory.sezdev.com"
+      "link": ""
     },
     {
       "name": "Product Comparison",

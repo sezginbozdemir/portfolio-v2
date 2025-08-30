@@ -34,6 +34,21 @@
       ],
       "link": "https://snoya.sezdev.com"
     },
+    {
+      "name": "Medical Dispencer UI",
+      "tiles": ["Javascript", "CSS"],
+      "descriptions": [
+        "A lightweight user interface designed for a medical dispenser running on a single board computer. The project focuses on a clear and accessible layout with large touch-friendly controls. Optimized for low resource usage and reliable offline operation."
+      ],
+      "url": "https://github.com/sezginbozdemir/medical-dispencer-ui",
+      "desktopImage": "/projects/dispencer-ui/desktop.png",
+      "mobileImage": "/projects/dispencer-ui/mobile.png",
+      "images": [
+        "/projects/dispencer-ui/desktop.png",
+        "/projects/dispencer-ui/mobile.png"
+      ],
+      "link": ""
+    },
 
     {
       "name": "Guided Tours – Admin Managed Tour Platform",
@@ -201,7 +216,7 @@
         "/projects/stock/3.png",
         "/projects/stock/4.png"
       ],
-      "link": "https://inventory.sezdev.com"
+      "link": ""
     },
     {
       "name": "Product Comparison – CSV-Based Affiliate Catalog ",
