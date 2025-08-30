@@ -36,6 +36,7 @@ import {
   SiPm2,
   SiDrizzle,
   SiShadcnui,
+  SiSupabase,
 } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { FaBootstrap, FaSass, FaShopify, FaYarn } from "react-icons/fa6";
@@ -78,6 +79,7 @@ export const iconMap: Record<string, React.ReactElement> = {
   SiRest: <TbApi />,
   SiExpress: <SiExpress />,
   Drizzle: <SiDrizzle />,
+  Supabase: <SiSupabase />,
   ////DevOps
   SiTurborepo: <SiTurborepo />,
   SiNginx: <SiNginx />,

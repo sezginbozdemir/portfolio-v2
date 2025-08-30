@@ -42,7 +42,8 @@
       { "name": "JWT", "icon": "SiJsonwebtokens" },
       { "name": "REST", "icon": "SiRest" },
       { "name": "Express", "icon": "SiExpress" },
-      { "name": "Drizzle", "icon": "Drizzle" }
+      { "name": "Drizzle", "icon": "Drizzle" },
+      { "name": "Supabase", "icon": "Supabase" }
     ]
   },
   "devops": {
