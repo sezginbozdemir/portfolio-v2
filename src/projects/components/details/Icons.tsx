@@ -18,6 +18,8 @@ import {
   SiShadcnui,
   SiRemix,
   SiShopify,
+  SiCss3,
+  SiJavascript,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 export const tileIcons: Record<string, React.ElementType> = {
@@ -28,6 +30,7 @@ export const tileIcons: Record<string, React.ElementType> = {
   TailwindCSS: SiTailwindcss,
   "Next.js": TbBrandNextjs,
   TypeScript: SiTypescript,
+  Javascript: SiJavascript,
   Vite: SiVite,
   "React Native": FaReact,
   PostgreSQL: SiPostgresql,
@@ -45,4 +48,5 @@ export const tileIcons: Record<string, React.ElementType> = {
   Shadcn: SiShadcnui,
   Remix: SiRemix,
   Shopify: SiShopify,
+  CSS: SiCss3,
 };
